@@ -1,6 +1,6 @@
 {
   "name": "wenchang.bianjie.ai",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "文昌链门户网站",
   "main": "index.js",
   "scripts": {
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shan1521/wenchang.bianjie.ai.git"
+    "url": "git+https://gitlab.bianjie.ai/wenchang-network/websites/wenchang.bianjie.ai.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shan1521/wenchang.bianjie.ai/issues"
+    "url": "https://gitlab.bianjie.ai/wenchang-network/websites/wenchang.bianjie.ai/-/issues"
   },
-  "homepage": "https://github.com/shan1521/wenchang.bianjie.ai#readme",
+  "homepage": "https://gitlab.bianjie.ai/wenchang-network/websites/wenchang.bianjie.ai",
   "dependencies": {
     "ant-design-vue": "^1.7.8",
     "async-validator": "^1.11.5",
