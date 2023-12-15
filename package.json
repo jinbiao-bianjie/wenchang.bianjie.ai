@@ -26,7 +26,6 @@
         "async-validator": "^1.11.5",
         "core-js": "^2.6.9",
         "cross-env": "^7.0.3",
-        "element-ui": "^2.15.6",
         "swiper": "^5.2.0",
         "vue-awesome-swiper": "^4.1.1",
         "vue-seamless-scroll": "^1.1.23",

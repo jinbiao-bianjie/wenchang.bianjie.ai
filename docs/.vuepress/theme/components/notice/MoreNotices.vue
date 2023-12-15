@@ -22,16 +22,7 @@
                     </li>
                 </ul>
                 <div class="notices_pagination">
-                    <el-pagination
-                        layout="prev, pager, next"
-                        :page-size="10"
-                        @current-change="changeCurrentPage"
-                        :current-page="currentPage"
-                        :total="total"
-                        prev-text="上一页"
-                        next-text="下一页"
-                    >
-                    </el-pagination>
+                    <!-- todo shan 添加分页组件 -->
                 </div>
             </div>
         </div>
@@ -166,51 +157,6 @@ export default {
                 justify-content: flex-end;
                 align-items: center;
                 margin-top: 1.9rem;
-                .el-pagination {
-                    .btn-prev, .btn-next {
-                        padding: 0;
-                        min-width: 6.2rem;
-                        height: 3rem;
-                        font-size: $fontSize14;
-                        text-align: center;
-                        border: 0.1rem solid #EFEEFC;
-                        border-radius: 0.2rem;
-                        &:hover:not(:disabled) {
-                            color: $highlightDetailColor;
-                            border-color: $highlightDetailColor;
-                        }
-                    }
-                    .btn-next {
-                        margin-left: 1rem;
-                    }
-                    .el-pager {
-                        .number {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-left: 1rem;
-                            min-width: 3rem;
-                            height: 3rem;
-                            font-size: $fontSize14;
-                            font-weight: 400;
-                            color: rgba(0, 0, 0, 0.65);
-                            border: 0.1rem solid #EFEEFC;
-                            border-radius: 0.2rem;
-                            &:hover {
-                                color: $highlightDetailColor;
-                                border-color: $highlightDetailColor;
-                            }
-                        }
-                        .active {
-                            color: #fff;
-                            background: $highlightDetailColor;
-                            cursor: pointer;
-                            &:hover {
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
             }
         }
     }

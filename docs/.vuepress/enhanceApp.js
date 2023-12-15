@@ -2,9 +2,6 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import store from './store';
 import './public/iconfont/iconfont.css';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 
 export default async ({ Vue, options, router, siteData, isServer }) => {
@@ -18,8 +15,6 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
     };
 
     Vue.use(router);
-    Vue.use(Antd);
-    Vue.use(ElementUI);
     Vue.use(Vuex);
     Vue.mixin({ store: store });
     if (!isServer) {
@@ -36,12 +31,12 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
             next();
         });
         await import('./public/iconfont/iconfont').then((module) => {});
-        await import('element-ui')
+        await import('ant-design-vue')
             .then((module) => {
                 Vue.use(module.default);
             })
             .catch((e) => {
-                console.log(e, 'element-ui error ');
+                console.log(e, 'ant-design-vue error ');
             });
         await import('vue-seamless-scroll')
             .then((module) => {
