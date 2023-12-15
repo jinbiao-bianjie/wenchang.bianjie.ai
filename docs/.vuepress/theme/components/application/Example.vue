@@ -2,31 +2,48 @@
     <div class="example_container">
         <div class="example_content_container">
             <div class="example_content">
-                <div class="title">{{exampleContent.title}}</div>
+                <div class="title">{{ exampleContent.title }}</div>
                 <ul class="example_list">
-                    <li class="example_item_container" v-for="(example,index) in exampleContent.exampleList" :key="index">
+                    <li
+                        class="example_item_container"
+                        v-for="(example, index) in exampleContent.exampleList"
+                        :key="index"
+                    >
                         <div class="example_item_wrap">
                             <div class="example_item">
                                 <div class="example_item_img">
-                                    <img :src="example.imgLink" alt="">
+                                    <img :src="example.imgLink" alt="" />
                                 </div>
                                 <div class="example_item_content">
-                                    <div class="example_name">{{example.exampleName}}</div>
+                                    <div class="example_name">{{ example.exampleName }}</div>
                                     <div class="example_affiliation">
                                         <i class="iconfont icon-gongsi"></i>
-                                        <span class="affiliation">{{example.affiliation}}</span>
+                                        <span class="affiliation">{{ example.affiliation }}</span>
                                     </div>
                                     <ul class="intro_list">
-                                        <li class="intro_item" v-for="(intro,iIndex) in example.introList" :key="iIndex">
-                                            {{intro.intro}}
+                                        <li
+                                            class="intro_item"
+                                            v-for="(intro, iIndex) in example.introList"
+                                            :key="iIndex"
+                                        >
+                                            {{ intro.intro }}
                                         </li>
                                     </ul>
                                     <ul class="desc_list">
-                                        <li class="desc_item" v-for="(desc,dIndex) in example.descList" :key="dIndex">
-                                            {{desc.description}}
+                                        <li
+                                            class="desc_item"
+                                            v-for="(desc, dIndex) in example.descList"
+                                            :key="dIndex"
+                                        >
+                                            {{ desc.description }}
                                         </li>
                                     </ul>
-                                    <a class="more" :href="example.link" target="_blank" rel="noopener noreferrer">
+                                    <a
+                                        class="more"
+                                        :href="example.link"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
                                         <span class="more_text">了解更多</span>
                                         <i class="iconfont icon-turnto"></i>
                                     </a>
@@ -45,13 +62,13 @@ export default {
     name: 'Example',
     props: ['exampleContent'],
     computed: {
-        differentImgName(){
-            return function(imgName) {
+        differentImgName() {
+            return function (imgName) {
                 return `/${imgName}`;
-            }
-        }
-    }
-}
+            };
+        },
+    },
+};
 </script>
 
 <style lang="stylus">

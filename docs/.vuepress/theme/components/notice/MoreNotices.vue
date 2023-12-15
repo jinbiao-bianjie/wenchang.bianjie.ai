@@ -2,17 +2,22 @@
     <div class="morenotices_container">
         <div class="morenotices_content_container">
             <div class="morenotices_content">
-                <div class="title">{{noticeContent.title}}</div>
+                <div class="title">{{ noticeContent.title }}</div>
                 <ul class="notice_list">
-                    <li class="notice_item" v-for="(item,index) in noticesList" :key="index" @click="changeShowMask(index)">
+                    <li
+                        class="notice_item"
+                        v-for="(item, index) in noticesList"
+                        :key="index"
+                        @click="changeShowMask(index)"
+                    >
                         <div class="notice_top">
-                            <div class="notice_title">{{item.title}}</div>
+                            <div class="notice_title">{{ item.title }}</div>
                             <div class="notice_date">
-                                <i class="iconfont icon-xingzhuangjiehe"></i>{{item.date}}
+                                <i class="iconfont icon-xingzhuangjiehe"></i>{{ item.date }}
                             </div>
                         </div>
                         <div class="notice_bottom">
-                            {{item.info}}
+                            {{ item.info }}
                         </div>
                     </li>
                 </ul>
@@ -35,31 +40,31 @@
 </template>
 
 <script>
-import NoticeMask from "../common/NoticeMask.vue";
+import NoticeMask from '../common/NoticeMask.vue';
 export default {
-    name: "MoreNotices",
+    name: 'MoreNotices',
     data() {
         return {
             total: 0,
             currentPage: 1,
             showMask: false,
-            notice: ""
-        }
+            notice: '',
+        };
     },
     computed: {
         noticeContent() {
             return this.$frontmatter.noticeContent;
         },
         noticesList() {
-            if(this.$frontmatter && this.$frontmatter.noticeContent) {
+            if (this.$frontmatter && this.$frontmatter.noticeContent) {
                 let notices = JSON.parse(JSON.stringify(this.noticeContent.noticeList));
                 return notices.splice((this.currentPage - 1) * 10, 10);
             }
         },
     },
     methods: {
-        setTotal(){
-            if(this.$frontmatter && this.$frontmatter.noticeContent.noticeList.length >= 0){
+        setTotal() {
+            if (this.$frontmatter && this.$frontmatter.noticeContent.noticeList.length >= 0) {
                 this.total = this.$frontmatter.noticeContent.noticeList.length;
             }
         },
@@ -75,9 +80,9 @@ export default {
         this.setTotal();
     },
     components: {
-        NoticeMask
-    }
-}
+        NoticeMask,
+    },
+};
 </script>
 
 <style lang="stylus" scoped>

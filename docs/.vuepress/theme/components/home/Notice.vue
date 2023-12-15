@@ -3,20 +3,30 @@
         <div class="notice_content_container">
             <div class="notice_content">
                 <div class="notice_img">
-                    <img src="../../assets/notice.png" alt="">
+                    <img src="../../assets/notice.png" alt="" />
                 </div>
                 <div class="notice_center" @click="updateShowMask($event)">
-                    <vue-seamless-scroll class="notice_description" :data="noticeContent.noticeList" :class-option="classOption">
+                    <vue-seamless-scroll
+                        class="notice_description"
+                        :data="noticeContent.noticeList"
+                        :class-option="classOption"
+                    >
                         <ul class="notice_list">
-                            <li class="notice_item" v-for="(item,index) in noticeContent.noticeList" :key="index" :id="index+1" :data-notice="JSON.stringify(item)">
-                                {{item.title}}
-                                {{item.info}}
+                            <li
+                                class="notice_item"
+                                v-for="(item, index) in noticeContent.noticeList"
+                                :key="index"
+                                :id="index + 1"
+                                :data-notice="JSON.stringify(item)"
+                            >
+                                {{ item.title }}
+                                {{ item.info }}
                             </li>
                         </ul>
                     </vue-seamless-scroll>
                 </div>
                 <router-link class="go_chain" to="/notices">
-                    <span class="text">{{noticeContent.moreText}}</span>
+                    <span class="text">{{ noticeContent.moreText }}</span>
                     <i class="iconfont icon-turnto"></i>
                 </router-link>
             </div>
@@ -28,8 +38,8 @@
 <script>
 import NoticeMask from '../common/NoticeMask';
 export default {
-    name: "Notice",
-    props:['noticeContent'],
+    name: 'Notice',
+    props: ['noticeContent'],
     data() {
         return {
             showMask: false,
@@ -40,21 +50,23 @@ export default {
                 waitTime: 3000,
                 switchDelay: 3000,
                 hoverStop: false,
-                isSingleRemUnit: false
+                isSingleRemUnit: false,
             },
-            notice: ""
+            notice: '',
         };
     },
     methods: {
         updateShowMask(e) {
             this.showMask = true;
-            this.notice = JSON.parse(e.target.getAttribute('data-notice')) && JSON.parse(e.target.getAttribute('data-notice')).maskContent;
+            this.notice =
+                JSON.parse(e.target.getAttribute('data-notice')) &&
+                JSON.parse(e.target.getAttribute('data-notice')).maskContent;
         },
     },
     components: {
         NoticeMask,
-    }
-}
+    },
+};
 </script>
 
 <style lang="stylus" scoped>

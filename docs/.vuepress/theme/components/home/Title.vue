@@ -2,21 +2,36 @@
     <div class="title_container" :style="differentBanner(content.img)">
         <div class="title_content_container">
             <div class="title_content">
-                <div class="title">{{content.title}}</div>
+                <div class="title">{{ content.title }}</div>
                 <div class="sub_title" v-html="content.subTitle"></div>
                 <ul class="link_list" v-if="content.linkList">
-                    <li class="link_wrap" v-for="(item, index) in content.linkList" :class="{link_wrap_img: item.img}" :key="index">
+                    <li
+                        class="link_wrap"
+                        v-for="(item, index) in content.linkList"
+                        :class="{ link_wrap_img: item.img }"
+                        :key="index"
+                    >
                         <router-link v-if="item.route" class="doc_wrap" :to="item.route">
                             <i class="iconfont" :class="item.icon"></i>
-                            <span class="link_text">{{item.linkText}}</span>
+                            <span class="link_text">{{ item.linkText }}</span>
                         </router-link>
-                        <a v-if="item.link" class="doc_wrap" :href="item.link" target="_blank" rel="noopener noreferrer">
+                        <a
+                            v-if="item.link"
+                            class="doc_wrap"
+                            :href="item.link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <i v-if="item.icon" class="iconfont" :class="item.icon"></i>
                             <span v-if="item.img" class="img_wrap">
-                                <img src="../../assets/banner_sign.png" alt="">
-                                <img class="item_img_logo" :src="$withBase(differentImgName(item.img))" alt="">
+                                <img src="../../assets/banner_sign.png" alt="" />
+                                <img
+                                    class="item_img_logo"
+                                    :src="$withBase(differentImgName(item.img))"
+                                    alt=""
+                                />
                             </span>
-                            <span class="link_text">{{item.linkText}}</span>
+                            <span class="link_text">{{ item.linkText }}</span>
                         </a>
                     </li>
                 </ul>
@@ -28,20 +43,20 @@
 <script>
 export default {
     name: 'Title',
-    props: ["content"],
+    props: ['content'],
     computed: {
         differentImgName() {
-            return function(imgName) {
+            return function (imgName) {
                 return `/home/${imgName}`;
-            }
+            };
         },
         differentBanner() {
-            return function(imgName) {
+            return function (imgName) {
                 return `background: url(/home/${imgName}.png) no-repeat center / cover`;
-            }
-        }
+            };
+        },
     },
-}
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -140,7 +155,7 @@ export default {
                             bottom: 0;
                             display: flex;
                             justify-content: center;
-                            align-items: center; 
+                            align-items: center;
                             width: 4.8rem;
                             height: 4.8rem;
                             img {

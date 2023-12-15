@@ -2,8 +2,8 @@
     <div class="ecolobanner_container">
         <div class="ecolobanner_content_container">
             <div class="ecolobanner_content">
-                <div class="title">{{appBannerContent.title}}</div>
-                <div class="sub_title">{{appBannerContent.subTitle}}</div>
+                <div class="title">{{ appBannerContent.title }}</div>
+                <div class="sub_title">{{ appBannerContent.subTitle }}</div>
             </div>
         </div>
     </div>
@@ -11,9 +11,9 @@
 
 <script>
 export default {
-    name: "EcoloBanner",
-    props: ["appBannerContent"]
-}
+    name: 'EcoloBanner',
+    props: ['appBannerContent'],
+};
 </script>
 
 <style lang="stylus" scoped>
