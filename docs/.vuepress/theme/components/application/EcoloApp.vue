@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import EcoloBanner from "./EcoloBanner.vue";
-import Example from "./Example.vue";
-import ServiceProviders from "./ServiceProvider"
-import Partners from "./Partners.vue";
+import EcoloBanner from './EcoloBanner.vue';
+import Example from './Example.vue';
+import ServiceProviders from './ServiceProvider';
+import Partners from './Partners.vue';
 export default {
-    name: "EcoloApp",
+    name: 'EcoloApp',
     computed: {
         appBannerContent() {
             return this.$frontmatter.appBannerContent;
@@ -32,11 +32,9 @@ export default {
         EcoloBanner,
         Example,
         ServiceProviders,
-        Partners
-    }
-}
+        Partners,
+    },
+};
 </script>
 
-<style lang="stylus" scoped>
-
-</style>
+<style lang="stylus" scoped></style>

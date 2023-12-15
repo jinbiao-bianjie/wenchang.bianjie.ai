@@ -1,11 +1,11 @@
 <template>
     <div class="partners_container">
-        <div class="title">{{partners.title}}</div>
+        <div class="title">{{ partners.title }}</div>
         <div class="partners_content_container">
             <div class="partners_content">
                 <swiper class="partners_list_swiper" :options="swiperOptions">
                     <swiper-slide v-for="(item, index) in partners.partnersList" :key="index">
-                        <img :src="item.imgLink" alt="">
+                        <img :src="item.imgLink" alt="" />
                     </swiper-slide>
                 </swiper>
             </div>
@@ -17,8 +17,8 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 export default {
-    name: "Partners",
-    props: ["partners"],
+    name: 'Partners',
+    props: ['partners'],
     data() {
         return {
             swiperOptions: {
@@ -31,15 +31,15 @@ export default {
                 loop: true,
                 slidesPerView: 'auto',
                 loopedSlides: 5,
-                speed: 2000
-            }
-        }
+                speed: 2000,
+            },
+        };
     },
     components: {
         Swiper,
-        SwiperSlide
+        SwiperSlide,
     },
-}
+};
 </script>
 
 <style lang="stylus" scoped>

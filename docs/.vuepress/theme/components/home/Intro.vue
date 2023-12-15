@@ -3,16 +3,20 @@
         <div class="intro_content_container">
             <div class="intro_content_wrap">
                 <div class="img_wrap">
-                    <img src="../../assets/home/wenchang_image.png" alt="">
+                    <img src="../../assets/home/wenchang_image.png" alt="" />
                 </div>
                 <div class="intro_content">
-                    <p class="intro_item" v-for="(item,index) in chainIntro.chainIntroList" :key="index">
-                        {{item.paragraph}}
+                    <p
+                        class="intro_item"
+                        v-for="(item, index) in chainIntro.chainIntroList"
+                        :key="index"
+                    >
+                        {{ item.paragraph }}
                     </p>
                 </div>
             </div>
             <div class="intro_info_content">
-                <img src="../../assets/home/intro_info.png" alt="">
+                <img src="../../assets/home/intro_info.png" alt="" />
             </div>
         </div>
     </div>
@@ -21,8 +25,8 @@
 <script>
 export default {
     name: 'Intro',
-    props: ['chainIntro']
-}
+    props: ['chainIntro'],
+};
 </script>
 
 <style lang="stylus">

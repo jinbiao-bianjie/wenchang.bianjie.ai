@@ -2,17 +2,25 @@
     <div class="corefunc_container">
         <div class="corefunc_content_container">
             <div class="corefunc_content">
-                <div class="title">{{coreFuncContent.title}}</div>
+                <div class="title">{{ coreFuncContent.title }}</div>
                 <ul class="func_list">
-                    <li class="func_item" v-for="(item, index) in coreFuncContent.funcList" :key="index">
+                    <li
+                        class="func_item"
+                        v-for="(item, index) in coreFuncContent.funcList"
+                        :key="index"
+                    >
                         <div class="item_img">
-                            <img :src="$withBase(differentImgName(item.imgName))" alt="">
+                            <img :src="$withBase(differentImgName(item.imgName))" alt="" />
                         </div>
                         <div class="item_info">
-                            <div class="func_name">{{item.funcName}}</div>
+                            <div class="func_name">{{ item.funcName }}</div>
                             <ul class="item_intro_list">
-                                <li class="item_intro" v-for="(iItem, iIndex) in item.introList" :key="iIndex">
-                                    {{iItem.intro}}
+                                <li
+                                    class="item_intro"
+                                    v-for="(iItem, iIndex) in item.introList"
+                                    :key="iIndex"
+                                >
+                                    {{ iItem.intro }}
                                 </li>
                             </ul>
                         </div>
@@ -25,16 +33,16 @@
 
 <script>
 export default {
-    name: "CoreFunc",
-    props: ["coreFuncContent"],
+    name: 'CoreFunc',
+    props: ['coreFuncContent'],
     computed: {
         differentImgName() {
-            return function(imgName) {
+            return function (imgName) {
                 return `/home/${imgName}`;
-            }
-        }
-    }
-}
+            };
+        },
+    },
+};
 </script>
 
 <style lang="stylus" scoped>

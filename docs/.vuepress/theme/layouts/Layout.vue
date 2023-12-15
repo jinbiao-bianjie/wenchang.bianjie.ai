@@ -1,8 +1,12 @@
 <template>
-    <div class="theme-container" >
+    <div class="theme-container">
         <!-- 百度站长 logo -->
-        <img class="logo web_logo" src="../assets/link_logo.jpg" alt="文昌链logo">
-        <img class="logo web_logo_mobile" src="../assets/link_logo_mobile.jpg" alt="文昌链mobile_logo">
+        <img class="logo web_logo" src="../assets/link_logo.jpg" alt="文昌链logo" />
+        <img
+            class="logo web_logo_mobile"
+            src="../assets/link_logo_mobile.jpg"
+            alt="文昌链mobile_logo"
+        />
         <ClientOnly>
             <Navigation></Navigation>
         </ClientOnly>
@@ -26,23 +30,23 @@
 </template>
 
 <script>
-import Navigation from "@theme/components/Navigation.vue";
-import Home from "@theme/components/home/Home.vue";
-import EcoloApp from "@theme/components/application/EcoloApp.vue";
-import MoreNotices from "@theme/components/notice/MoreNotices.vue";
-import Footer from "@theme/components/Footer.vue";
-import Contact from "@theme/components/common/Contact.vue";
-import cfg from "../../config.json";
+import Navigation from '@theme/components/Navigation.vue';
+import Home from '@theme/components/home/Home.vue';
+import EcoloApp from '@theme/components/application/EcoloApp.vue';
+import MoreNotices from '@theme/components/notice/MoreNotices.vue';
+import Footer from '@theme/components/Footer.vue';
+import Contact from '@theme/components/common/Contact.vue';
+import cfg from '../../config.json';
 
 export default {
-    name: "Layout",
+    name: 'Layout',
     components: {
         Navigation,
         Home,
         EcoloApp,
         MoreNotices,
         Contact,
-        Footer
+        Footer,
     },
 
     computed: {
@@ -52,9 +56,9 @@ export default {
     },
     mounted() {
         // 友盟统计添加
-        const script = document.createElement("script");
+        const script = document.createElement('script');
         script.src = `https://s4.cnzz.com/z_stat.php?id=${cfg.umengId}&web_id=${cfg.umengWebId}`;
-        script.language = "JavaScript";
+        script.language = 'JavaScript';
         document.body.appendChild(script);
     },
 };

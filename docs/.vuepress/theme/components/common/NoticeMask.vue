@@ -14,17 +14,17 @@
 
 <script>
 export default {
-    name: "NoticeMask",
-    props: ['showMask','notice'],
+    name: 'NoticeMask',
+    props: ['showMask', 'notice'],
     methods: {
-        updateShowMask(){
+        updateShowMask() {
             this.$emit('update:showMask', false);
-        }
+        },
     },
     mounted() {
-        console.log(this.notice,'notice');
-    }
-}
+        console.log(this.notice, 'notice');
+    },
+};
 </script>
 
 <style lang="stylus" scoped>
@@ -51,7 +51,7 @@ export default {
         max-width: 64rem;
         background: #fff;
         border-radius: 0.4rem;
-        
+
         .mask_content {
             box-sizing: border-box;
             display: flex;

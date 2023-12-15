@@ -1,23 +1,27 @@
 <template>
     <div class="swiper_container" ref="mySwiper">
         <a-carousel dots-class="slick-dots" autoplay :autoplaySpeed="4000" :speed="2000">
-            <template v-for="(item,index) in titleContent">
-                <Title :key="index" :content="titleContent[index]" :class="{special_title: index === 0}"></Title>
+            <template v-for="(item, index) in titleContent">
+                <Title
+                    :key="index"
+                    :content="titleContent[index]"
+                    :class="{ special_title: index === 0 }"
+                ></Title>
             </template>
         </a-carousel>
     </div>
 </template>
 
 <script>
-import {Carousel} from "ant-design-vue";
-import Title from "./Title.vue";
+import { Carousel } from 'ant-design-vue';
+import Title from './Title.vue';
 export default {
-    name: "SwiperBanner",
-    props: ["titleContent"],
+    name: 'SwiperBanner',
+    props: ['titleContent'],
     components: {
         Carousel,
-        Title
-    }
+        Title,
+    },
 };
 </script>
 
