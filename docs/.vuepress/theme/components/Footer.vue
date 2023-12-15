@@ -5,15 +5,6 @@
                 <div class="content">
                     <div class="content_left">
                         <div class="left_img">
-                            <router-link
-                                class="logo"
-                                to="/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img src="../assets/wenchang_logo.png" alt="" />
-                            </router-link>
-                            <span class="line"></span>
                             <a
                                 class="logo irita_logo"
                                 href="https://irita.bianjie.ai/"

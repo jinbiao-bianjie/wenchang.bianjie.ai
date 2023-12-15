@@ -2,7 +2,7 @@
 {
     layout: Layout,
     isEcoloApp: true,
-    title: 生态应用 | 文昌链官网,
+    title: 生态合作 | 文昌链官网,
     appBannerContent:
         {
             title: 「文昌链 IRITA OPB」,
