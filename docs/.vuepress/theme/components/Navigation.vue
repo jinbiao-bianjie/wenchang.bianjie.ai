@@ -27,9 +27,7 @@
                     <router-link
                         v-show="item.target !== '_blank'"
                         class="navigation_item"
-                        :class="
-                            currentIndex === index ? 'router_link_item' : ''
-                        "
+                        :class="currentIndex === index ? 'router_link_item' : ''"
                         :to="item.link"
                         :target="item.target"
                         rel="noopener noreferrer"
@@ -47,10 +45,7 @@
                     <span class="iconfont icon-menu"></span>
                 </div>
             </div>
-            <ul
-                class="mobile_navigation_content_right"
-                v-show="flShowMobileMenu"
-            >
+            <ul class="mobile_navigation_content_right" v-show="flShowMobileMenu">
                 <li
                     v-if="index !== 6"
                     class="mobile_navigation_list_item"
@@ -58,9 +53,7 @@
                     :key="index"
                     @click="changeIndex(index)"
                 >
-                    <div
-                        :class="currentIndex === index ? 'mobile_line' : ''"
-                    ></div>
+                    <div :class="currentIndex === index ? 'mobile_line' : ''"></div>
                     <a
                         v-show="item.target === '_blank'"
                         class="mobile_navigation_item"
@@ -87,7 +80,7 @@
 
 <script>
 export default {
-    name: "Navigation",
+    name: 'Navigation',
     data() {
         return {
             navigation: [],
@@ -107,13 +100,19 @@ export default {
     },
     methods: {
         toHome() {
-            this.$router.push("/");
-            this.$store.commit("currentIndex", 0);
+            this.$router.push('/');
+            this.$store.commit('currentIndex', 0);
         },
         changeIndex(index) {
-            if (this.currentIndex !== index && index !== 2 && index !== 3 && index !== 4 && index !== 5) {
-                this.$store.commit("currentIndex", index);
-                localStorage.setItem("currentIndex", JSON.stringify(index));
+            if (
+                this.currentIndex !== index &&
+                index !== 2 &&
+                index !== 3 &&
+                index !== 4 &&
+                index !== 5
+            ) {
+                this.$store.commit('currentIndex', index);
+                localStorage.setItem('currentIndex', JSON.stringify(index));
             }
         },
         isShowMobileMenu() {
@@ -297,7 +296,7 @@ export default {
             width: 100%;
             background: $whiteColor;
             list-style: none;
-            
+
 
             .mobile_navigation_list_item {
                 position: relative;

@@ -28,16 +28,16 @@ export default {
         },
         coreFuncContent() {
             return this.$frontmatter.coreFuncContent;
-        }
+        },
     },
     components: {
         SwiperBanner,
         Notice,
         Intro,
         CoreFunc,
-        Process
-    }
-}
+        Process,
+    },
+};
 </script>
 
 <style lang="stylus">

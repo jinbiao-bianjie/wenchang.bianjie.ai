@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-        <div class="title">{{providers.title}}</div>
+        <div class="title">{{ providers.title }}</div>
         <div class="content">
-            <div v-for="(item,index) in providers.providerList" :key="index" class="content_item">
-                <img :src="item.imgLink" class="content_item_provider"></img>
+            <div v-for="(item, index) in providers.providerList" :key="index" class="content_item">
+                <img :src="item.imgLink" class="content_item_provider" />
             </div>
         </div>
     </div>
@@ -12,9 +12,9 @@
 export default {
     name: 'Providers',
     props: ['providers'],
-}
+};
 </script>
-<style lang="stylus" scoped >
+<style lang="stylus" scoped>
 .container {
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ export default {
                 height: 100%;
             }
         }
-        
+
         @media(max-width: 1140px) {
             padding-left: 4.8rem;
             padding-right: 4.8rem;
@@ -60,5 +60,4 @@ export default {
         }
     }
 }
-
 </style>

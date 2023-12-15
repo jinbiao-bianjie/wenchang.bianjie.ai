@@ -5,25 +5,31 @@
                 <div class="content">
                     <div class="content_left">
                         <div class="left_img">
-                            <router-link class="logo" to="/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src="../assets/wenchang_logo.png"
-                                    alt=""
-                                />
+                            <router-link
+                                class="logo"
+                                to="/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src="../assets/wenchang_logo.png" alt="" />
                             </router-link>
                             <span class="line"></span>
-                            <a class="logo irita_logo" href="https://irita.bianjie.ai/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src="../assets/irita_logo.png"
-                                    alt=""
-                                />
+                            <a
+                                class="logo irita_logo"
+                                href="https://irita.bianjie.ai/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src="../assets/irita_logo.png" alt="" />
                             </a>
                             <span class="line"></span>
-                            <a class="logo bianjie_logo" href="https://www.bianjie.ai/" target="_blank" rel="noopener noreferrer">
-                                <img
-                                    src="../assets/bianjie_logo.png"
-                                    alt=""
-                                />
+                            <a
+                                class="logo bianjie_logo"
+                                href="https://www.bianjie.ai/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src="../assets/bianjie_logo.png" alt="" />
                             </a>
                         </div>
                         <p class="img_desc">
@@ -47,16 +53,11 @@
                             <div class="focus">
                                 <span class="focus_title">关注我们</span>
                                 <span class="qr_code">
-                                    <img
-                                        src="../assets/qrcode.png"
-                                        alt=""
-                                        class="qr_code_img"
-                                    />
+                                    <img src="../assets/qrcode.png" alt="" class="qr_code_img" />
                                 </span>
                                 <span class="desc">微信公众号 边界智能</span>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -64,11 +65,13 @@
         <div class="footer_content_bottom">
             <div class="bottom_content">
                 <div class="copyright_content">
-                    <span class="copyright_content_margin">{{ `©${new Date().getFullYear()} wenchangchain` }}</span>
+                    <span class="copyright_content_margin">{{
+                        `©${new Date().getFullYear()} wenchangchain`
+                    }}</span>
                     <span class="copyright_content_margin">Bianjie.AI</span>
                     <span>All Rights Reserved</span>
                 </div>
-                
+
                 <div class="bottom_line"></div>
                 <a
                     href="https://beian.miit.gov.cn/#/Integrated/index"
@@ -87,10 +90,7 @@
                 </span>
                 <div class="bottom_line"></div>
                 <span class="police_content">
-                    <a
-                        href="https://bcbeian.ifcert.cn"
-                        target="_blank"
-                        rel="noreferrer noopener"
+                    <a href="https://bcbeian.ifcert.cn" target="_blank" rel="noreferrer noopener"
                         >沪网信备31011521343153030049号</a
                     >
                 </span>
@@ -101,13 +101,13 @@
 
 <script>
 export default {
-    name: "Footer",
+    name: 'Footer',
     methods: {
         toHome() {
-            this.$router.push("/");
-            this.$store.commit("currentIndex", 0);
+            this.$router.push('/');
+            this.$store.commit('currentIndex', 0);
         },
-    }
+    },
 };
 </script>
 
@@ -275,7 +275,7 @@ export default {
                             }
                         }
                     }
-                    
+
                     .focus {
                         display: flex;
                         flex-direction: column;
@@ -315,7 +315,7 @@ export default {
                         }
                     }
                 }
-                
+
             }
         }
     }

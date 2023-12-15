@@ -2,7 +2,13 @@
     <div class="contact">
         <div class="smart">
             <div id="smart_img" class="smart_img" @click="changeShowIframe">
-                <img v-show="!showIframe" src="../../assets/auto.png" alt="" @mouseenter="changeShowTip" @mouseleave="closeShowTip">
+                <img
+                    v-show="!showIframe"
+                    src="../../assets/auto.png"
+                    alt=""
+                    @mouseenter="changeShowTip"
+                    @mouseleave="closeShowTip"
+                />
                 <i v-show="showIframe" class="close_btn iconfont icon-close2"></i>
             </div>
             <div v-show="showTip" class="tip_wrap">
@@ -24,11 +30,11 @@
         </div>
         <div class="contact_container">
             <div class="contact_img">
-                <img src="../../assets/contact.png" alt="">
+                <img src="../../assets/contact.png" alt="" />
             </div>
             <div class="qrcode_container">
                 <div class="qrcode">
-                    <img src="../../assets/contact_qrcode.png" alt=""/>
+                    <img src="../../assets/contact_qrcode.png" alt="" />
                 </div>
                 <p class="qrcode_text">·文昌链小助手·</p>
                 <div class="email_container">
@@ -41,12 +47,12 @@
 </template>
 <script>
 export default {
-    name: "Contact",
+    name: 'Contact',
     data() {
         return {
             showTip: false,
             showIframe: false,
-        }
+        };
     },
     methods: {
         changeShowTip() {
@@ -58,11 +64,11 @@ export default {
         changeShowIframe() {
             this.showIframe = !this.showIframe;
             this.closeShowTip();
-        }
-    }
+        },
+    },
 };
 </script>
-<style lang='stylus' scoped>
+<style lang="stylus" scoped>
 .contact {
     position: fixed;
     right: 2.3rem;

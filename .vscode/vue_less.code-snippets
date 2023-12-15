@@ -1,0 +1,25 @@
+{
+    "vue + less": {
+        "prefix": "vue",
+        "body": [
+            "<template>",
+            "",
+            "</template>",
+            "",
+            "<script>",
+            "",
+            "export default {",
+            "name: ''",
+            "props: []",
+            "methods: {}",
+            "mounted() {}",
+            "}",
+            "</script>",
+            "",
+            "<style lang=\"less\" scoped>",
+            "",
+            "</style>"
+        ],
+        "description": "vue + less"
+    }
+}
