@@ -60,7 +60,7 @@ export default {
         font-size: $fontSize48;
         font-weight: 400;
         color: #000000;
-        line-height: 4.8rem;
+        line-height: 6rem;
         letter-spacing: 0.4rem;
 
         @media (max-width: 600px) {

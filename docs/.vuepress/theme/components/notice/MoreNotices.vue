@@ -49,7 +49,7 @@ export default {
         noticesList() {
             if (this.$frontmatter && this.$frontmatter.noticeContent) {
                 let notices = JSON.parse(JSON.stringify(this.noticeContent.noticeList));
-                return notices.splice((this.currentPage - 1) * 10, 10);
+                return notices.slice((this.currentPage - 1) * 10, 10);
             }
         },
     },

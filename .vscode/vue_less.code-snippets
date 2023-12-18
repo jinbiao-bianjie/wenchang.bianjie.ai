@@ -1,5 +1,5 @@
 {
-    "vue + less": {
+    "vue + stylus": {
         "prefix": "vue",
         "body": [
             "<template>",
@@ -9,17 +9,17 @@
             "<script>",
             "",
             "export default {",
-            "name: ''",
-            "props: []",
-            "methods: {}",
-            "mounted() {}",
+            "   name: '',",
+            "   props: [],",
+            "   methods: {},",
+            "   mounted() {}",
             "}",
             "</script>",
             "",
-            "<style lang=\"less\" scoped>",
+            "<style lang=\"stylus\" scoped>",
             "",
             "</style>"
         ],
-        "description": "vue + less"
+        "description": "vue + stylus"
     }
 }
