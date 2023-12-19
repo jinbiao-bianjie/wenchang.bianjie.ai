@@ -16,7 +16,7 @@
                         <div class="provider_logo_wrap">
                             <img class="banner_sign" src="../../assets/banner_sign.png" alt="" />
                             <div class="provider_logo">
-                                <img class="logo" :src="item.logo" />
+                                <img class="logo" :src="item.logo" alt="" />
                             </div>
                         </div>
                         <p class="provider_fullname">
@@ -56,6 +56,7 @@ export default {
             pageSize: 8,
             total: 0,
             showModal: false,
+            domWidth: document.documentElement.clientWidth || document.body.clientWidth,
         };
     },
     computed: {
@@ -76,12 +77,12 @@ export default {
             this.current = page;
         },
         resizeChange() {
-            const domWidth = document.documentElement.clientWidth || document.body.clientWidth;
-            if (domWidth > 1200) {
+            this.domWidth = document.documentElement.clientWidth || document.body.clientWidth;
+            if (this.domWidth > 1200) {
                 this.pageSize = 8;
-            } else if (domWidth > 992) {
+            } else if (this.domWidth > 992) {
                 this.pageSize = 6;
-            } else if (domWidth > 624) {
+            } else if (this.domWidth > 624) {
                 this.pageSize = 8;
             } else {
                 this.pageSize = 4;
@@ -101,6 +102,14 @@ export default {
     components: {
         Pagination,
         NoticeMask,
+    },
+    watch: {
+        domWidth: {
+            handler() {
+                this.resizeChange();
+            },
+            immediate: true,
+        },
     },
 };
 </script>
@@ -258,11 +267,8 @@ export default {
             color: rgba(0, 0, 0, 0.75);
             line-height: 2.4rem;
             overflow-y: auto;
-            scrollbar-width: none;
 
             &::-webkit-scrollbar {
-              position: absolute;
-              right: 0.4rem;
               width: 0.4rem;
               height: 0.4rem;
             }

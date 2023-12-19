@@ -22,7 +22,12 @@
                     </li>
                 </ul>
                 <div class="notices_pagination">
-                    <!-- todo shan 添加分页组件 -->
+                    <Pagination
+                        :current="currentPage"
+                        :pageSize="pageSize"
+                        :total="total"
+                        @pageNumChange="changeCurrentPage"
+                    ></Pagination>
                 </div>
             </div>
         </div>
@@ -31,6 +36,7 @@
 </template>
 
 <script>
+import Pagination from '../common/pagination/index.vue';
 import NoticeMask from '../common/NoticeMask.vue';
 export default {
     name: 'MoreNotices',
@@ -38,6 +44,7 @@ export default {
         return {
             total: 0,
             currentPage: 1,
+            pageSize: 10,
             showMask: false,
             notice: '',
         };
@@ -49,7 +56,10 @@ export default {
         noticesList() {
             if (this.$frontmatter && this.$frontmatter.noticeContent) {
                 let notices = JSON.parse(JSON.stringify(this.noticeContent.noticeList));
-                return notices.slice((this.currentPage - 1) * 10, 10);
+                return notices.slice(
+                    (this.currentPage - 1) * this.pageSize,
+                    this.currentPage * this.pageSize,
+                );
             }
         },
     },
@@ -70,95 +80,107 @@ export default {
     mounted() {
         this.setTotal();
     },
-    components: {
-        NoticeMask,
-    },
+    components: { Pagination, NoticeMask },
 };
 </script>
 
 <style lang="stylus" scoped>
 .morenotices_container {
-    width: 100%;
-    .morenotices_content_container {
-        margin: 0 auto;
-        max-width: 129.6rem;
-        .morenotices_content {
-            box-sizing: border-box;
-            margin: 0 auto;
-            padding: 8rem 4.8rem;
-            max-width: 129.6rem;
-            @media (max-width: 400px) {
-                padding: 8rem 1.6rem;
+  width: 100%;
+
+  .morenotices_content_container {
+    margin: 0 auto;
+    max-width: 129.6rem;
+
+    .morenotices_content {
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 8rem 4.8rem;
+      max-width: 129.6rem;
+
+      @media (max-width: 400px) {
+        padding: 8rem 1.6rem;
+      }
+
+      .title {
+        font-size: $fontSize24;
+        font-weight: 600;
+        color: #000000;
+        line-height: 2.4rem;
+        text-align: center;
+      }
+
+      .notice_list {
+        margin: 2.9rem auto 0;
+
+        .notice_item {
+          box-sizing: border-box;
+          padding: 1.9rem 0;
+          border-bottom: 1px solid #E8EBF5;
+          cursor: pointer;
+
+          &:hover {
+            .notice_top {
+              .notice_title {
+                color: rgba(112, 101, 255, 1);
+              }
             }
-            .title {
-                font-size: $fontSize24;
-                font-weight: 600;
-                color: #000000;
-                line-height: 2.4rem;
-                text-align: center;
+
+            .notice_bottom {
+              color: rgba(112, 101, 255, 1);
             }
-            .notice_list {
-                margin: 2.9rem auto 0;
-                .notice_item {
-                    box-sizing: border-box;
-                    padding: 1.9rem 0;
-                    border-bottom: 1px solid #E8EBF5;
-                    cursor: pointer;
-                    &:hover {
-                        .notice_top {
-                            .notice_title {
-                                color: rgba(112, 101, 255, 1);
-                            }
-                        }
-                        .notice_bottom {
-                            color: rgba(112, 101, 255, 1);
-                        }
-                    }
-                    .notice_top {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .notice_title {
-                            max-width: 64rem;
-                            font-size: $fontSize16;
-                            font-weight: 600;
-                            color: #000000;
-                            line-height: 2.4rem;
-                            overflow: hidden;
-                            text-overflow: ellipsis;
-                            white-space: nowrap;
-                        }
-                        .notice_date {
-                            font-size: $fontSize14;
-                            font-weight: 400;
-                            color: rgba(0, 0, 0, 0.64);
-                            line-height: 2.4rem;
-                            white-space: nowrap;
-                            .iconfont {
-                                margin-right: 0.4rem;
-                                font-size: $fontSize14;
-                            }
-                        }
-                    }
-                    .notice_bottom {
-                        margin-top: 1.2rem;
-                        font-size: $fontSize14;
-                        font-weight: 400;
-                        color: rgba(0, 0, 0, 0.64);
-                        line-height: 2.4rem;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                    }
-                }
+          }
+
+          .notice_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .notice_title {
+              max-width: 64rem;
+              font-size: $fontSize16;
+              font-weight: 600;
+              color: #000000;
+              line-height: 2.4rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
             }
-            .notices_pagination {
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                margin-top: 1.9rem;
+
+            .notice_date {
+              font-size: $fontSize14;
+              font-weight: 400;
+              color: rgba(0, 0, 0, 0.64);
+              line-height: 2.4rem;
+              white-space: nowrap;
+
+              .iconfont {
+                margin-right: 0.4rem;
+                font-size: $fontSize14;
+              }
             }
+          }
+
+          .notice_bottom {
+            margin-top: 1.2rem;
+            font-size: $fontSize14;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.64);
+            line-height: 2.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
         }
+      }
+
+      .notices_pagination {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 1.9rem;
+      }
     }
+  }
 }
 </style>
