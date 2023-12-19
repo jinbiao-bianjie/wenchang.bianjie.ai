@@ -3,8 +3,8 @@
         <div class="elite_container">
             <div class="elite_title">{{ eliteServiceProvider.title }}</div>
             <div class="elite_sub_title">{{ eliteServiceProvider.subTitle }}</div>
-            <span class="control_text">
-                {{ eliteServiceProvider.applyJoin }} <i class="iconfont icon-turnto"></i>
+            <span class="control_text" @click="changeShowModal">
+                {{ eliteServiceProvider.applyJoin.text }} <i class="iconfont icon-turnto"></i>
             </span>
             <div class="service_provider_list">
                 <div
@@ -29,18 +29,23 @@
                 </div>
             </div>
             <Pagination
-                class="pagination"
                 :current="current"
                 :pageSize="pageSize"
                 :total="total"
                 @pageNumChange="pageNumChange"
             ></Pagination>
         </div>
+        <NoticeMask
+            v-if="showModal"
+            :showMask.sync="showModal"
+            :notice="eliteServiceProvider.applyJoin.content"
+        ></NoticeMask>
     </div>
 </template>
 
 <script>
 import Pagination from '@theme/components/common/pagination/index.vue';
+import NoticeMask from '@theme/components/common/NoticeMask.vue';
 
 export default {
     name: 'Elite',
@@ -50,6 +55,7 @@ export default {
             current: 1,
             pageSize: 8,
             total: 0,
+            showModal: false,
         };
     },
     computed: {
@@ -71,13 +77,18 @@ export default {
         },
         resizeChange() {
             const domWidth = document.documentElement.clientWidth || document.body.clientWidth;
-            if (domWidth > 704 && domWidth < 1200) {
-                this.pageSize = 6;
-            } else if (domWidth <= 704) {
-                this.pageSize = 4;
-            } else {
+            if (domWidth > 1200) {
                 this.pageSize = 8;
+            } else if (domWidth > 992) {
+                this.pageSize = 6;
+            } else if (domWidth > 624) {
+                this.pageSize = 8;
+            } else {
+                this.pageSize = 4;
             }
+        },
+        changeShowModal() {
+            this.showModal = true;
         },
     },
     mounted() {
@@ -89,6 +100,7 @@ export default {
     },
     components: {
         Pagination,
+        NoticeMask,
     },
 };
 </script>
@@ -145,6 +157,18 @@ export default {
       gap: 2.4rem 2rem;
       margin-top: 4.8rem;
       max-width: 114rem;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 624px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
 
       .service_provider_item {
         position: relative;
@@ -257,6 +281,22 @@ export default {
     }
 
     .pagination {
+      margin-top: 2.4rem;
+    }
+  }
+}
+
+:deep(.mask_content) {
+  font-size: $fontSize14 !important;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.65);
+  line-height: 2.4rem !important;
+
+  .explanation {
+    margin-top: 26.8rem;
+    color: rgba(0, 0, 0, 0.4) !important;
+
+    @media (max-width: 768px) {
       margin-top: 2.4rem;
     }
   }

@@ -36,6 +36,8 @@ export default {
 
 <style lang="stylus" scoped>
 .pagination {
+  line-height: 3.2rem;
+
   :deep(.ant-pagination-item) {
     box-sizing: border-box;
     margin: 0 0.6rem;

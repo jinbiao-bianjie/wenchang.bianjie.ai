@@ -44,7 +44,26 @@
             subTitle:
                 边界智能于 2022 年 5
                 月推出「文昌链精英服务商计划」，以企业征信、行业经验、典型案例、服务能力等多维度的全方位考评标准，面向全行业遴选具有卓越技术能力及丰富项目经验的专业技术及服务合作伙伴，助力更多企业高效使用文昌链，实现业务增长。,
-            applyJoin: 申请加入,
+            applyJoin:
+                {
+                    text: 申请加入,
+                    content:
+                        {
+                            title: 「文昌链精英服务商」申请方式,
+                            content:
+                                <p>请将如下资料通过邮件发送至：<strong>contact@bianjie.ai</strong></p>
+                                <p>1.
+                                公司名称、官网和业务介绍资料（包含所服务的客户名单，以及所服务的 NFT
+                                / 元宇宙 / Web 3.0 市场客户名单）</p> <p>2. 支持的分布式应用在 AVATA
+                                平台的账号及认证主体。</p> <br />
+                                <p>加入「文昌链精英服务商计划」，与我们一起探索合作共赢模式，共同推动文昌链全球伙伴生态的繁荣发展！</p>
+                                <p><a target="_blank" rel="noopener noreferrer"
+                                href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNzExMDcxOA==&action=getalbum&album_id=2990618996519518213&scene=173&from_msgid=2247496590&from_itemidx=1&count=3&nolastread=1#wechat_redirect">
+                                了解更多 <i class="iconfont icon-turnto"></i></a></p> <p
+                                class="explanation">*
+                                该计划最终解释权归上海边界智能科技有限公司所有。</p>,
+                        },
+                },
             serviceProviderList:
                 [
                     {
