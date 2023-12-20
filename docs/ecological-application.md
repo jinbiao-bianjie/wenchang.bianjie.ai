@@ -282,7 +282,7 @@
                             {
                                 name: 重庆同位素网络科技有限公司,
                                 href: https://mp.weixin.qq.com/s/3BhhDIjzEpz3wqHcQba1tw,
-                                moreText: 立即体验,
+                                moreText: 了解更多,
                                 intro:
                                     中国领先 Web3.0
                                     的智能合约技术创新公司，在纽约、上海、北京和重庆拥有自己的开发团队，与文昌链等国内主流联盟链合作推出了一系列智能合约产品，涵盖了从
@@ -393,7 +393,7 @@
                                                     技术打造数实结合的可信权益，创新更具吸引力的的数字营销模式。,
                                             },
                                         ],
-                                    href: https://rwa.yeefox.cc/,
+                                    href: https://rwa.yeefox.cc/?invite=MTAwMDAwMDAx,
                                     moreText: 了解更多,
                                 },
                             ],
