@@ -1,8 +1,6 @@
-import Vue from 'vue';
 import Vuex from 'vuex';
 import store from './store';
 import './public/iconfont/iconfont.css';
-import './public/iconfont/iconfont.js';
 import 'ant-design-vue/dist/antd.css';
 
 export default async ({ Vue, options, router, siteData, isServer }) => {
