@@ -13,11 +13,8 @@
                     class="service_provider_item"
                 >
                     <div class="provider">
-                        <div class="provider_logo_wrap">
-                            <img class="banner_sign" src="../../assets/banner_sign.png" alt="" />
-                            <div class="provider_logo">
-                                <img class="logo" :src="item.logo" alt="" />
-                            </div>
+                        <div class="provider_logo">
+                            <img class="logo" :src="item.logo" alt="" />
                         </div>
                         <p class="provider_fullname">
                             <span class="fullname">{{ item.fullName }}</span>
@@ -191,6 +188,7 @@ export default {
         .provider {
           display: flex;
           flex-direction: column;
+          align-items: center;
           padding: 4.2rem 0 2rem;
           min-width: 27rem;
           min-height: 26.4rem;
@@ -198,31 +196,14 @@ export default {
           border: 0.1rem solid #DFE4F4;
           background: url('../../assets/ecology/elite_bg.png') no-repeat center / contain;
 
-          .provider_logo_wrap {
-            position: relative;
-            align-self: center;
+          .provider_logo {
+            padding: 1.2rem;
             width: 11rem;
             height: 11rem;
-            overflow: hidden;
 
-            .banner_sign {
+            .logo {
               width: 100%;
               height: 100%;
-            }
-
-            .provider_logo {
-              position: absolute;
-              top: 0;
-              right: 0;
-              bottom: 0;
-              left: 0;
-              padding: 1.2rem;
-
-              .logo {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-              }
             }
           }
 

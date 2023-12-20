@@ -12,7 +12,7 @@
                 >
                     <div class="contract_logo_wrap">
                         <div class="contract_logo">
-                            <img :src="item.logo" />
+                            <img :src="getSmartContractLogo(item.logo)" />
                         </div>
                     </div>
                     <div class="service_provider_details">
@@ -67,6 +67,11 @@ import SvgIcon from '@theme/components/common/SvgIcon.vue';
 export default {
     name: 'SmartContract',
     props: ['smartContract'],
+    methods: {
+        getSmartContractLogo(logo) {
+            return `/ecology/${logo}`;
+        },
+    },
     components: {
         Hexagon,
         SvgIcon,

@@ -6,6 +6,27 @@
   "description": "IRITA 官网项目",
   "glyphs": [
     {
+      "icon_id": "38633829",
+      "name": "门票",
+      "font_class": "Tickets",
+      "unicode": "e842",
+      "unicode_decimal": 59458
+    },
+    {
+      "icon_id": "38633828",
+      "name": "资产",
+      "font_class": "Zichan",
+      "unicode": "e841",
+      "unicode_decimal": 59457
+    },
+    {
+      "icon_id": "38633825",
+      "name": "徽章",
+      "font_class": "Huizhang",
+      "unicode": "e840",
+      "unicode_decimal": 59456
+    },
+    {
       "icon_id": "36719427",
       "name": "更多",
       "font_class": "gengduo",

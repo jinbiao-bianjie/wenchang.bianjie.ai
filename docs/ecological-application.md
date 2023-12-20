@@ -277,7 +277,7 @@
             serviceProviderList:
                 [
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: tongweisu.png,
                         info:
                             {
                                 name: 重庆同位素网络科技有限公司,
@@ -290,11 +290,11 @@
                                     Web3.0 应用场景解决方案，赋能实体。能为合作方提供如 Web3.0
                                     转型顾问、Web3.0
                                     商业模式架构设计、专属智能合约定制、产品转型等一站式服务。,
-                                contractList: [
-                                        # todo icon 设计 宽高要一样的
-                                        { icon: icon-close2, label: 数字权益门票合约 },
-                                        { icon: icon-close2, label: 数字徽章 POAP 合约 },
-                                        { icon: icon-close2, label: 数字资产合约 },
+                                contractList:
+                                    [
+                                        { icon: icon-Tickets, label: 数字权益门票合约 },
+                                        { icon: icon-Huizhang, label: 数字徽章 POAP 合约 },
+                                        { icon: icon-Zichan, label: 数字资产合约 },
                                     ],
                             },
                     },
@@ -328,7 +328,7 @@
             wallets:
                 [
                     {
-                        logo: lianbao,
+                        logo: lianbao.png,
                         name: 汇付天下链宝钱包,
                         intro: 数字支付钱包、数字资产钱包综合管理工具,
                         descriptions:
@@ -344,7 +344,7 @@
                             ],
                     },
                     {
-                        logo: shuzizhifu,
+                        logo: shuzizhifu.png,
                         name: 汇付天下数字支付钱包,
                         intro: 数字支付钱包管理工具,
                         descriptions:

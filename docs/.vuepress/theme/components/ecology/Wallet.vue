@@ -99,10 +99,10 @@ export default {
       justify-content: center;
       gap: 2.4rem;
       margin: 4rem auto 0;
-      width: 100%;
 
       @media (max-width: 570px) {
         display: unset;
+        width: 100%;
       }
 
       .wallet_provider {
@@ -214,12 +214,12 @@ export default {
             @media (max-width: 992px) {
               padding: 2.4rem;
               height: 36.8rem;
-              background: url('/ecology/back_bg_768.png') no-repeat center / cover !important;
+              background: url('../../assets/ecology/back_bg_768.png') no-repeat center / cover !important;
             }
 
             @media (max-width: 570px) {
               height: 46.4rem;
-              background: url('/ecology/back_bg_375.png') no-repeat center / cover !important;
+              background: url('../../assets/ecology/back_bg_375.png') no-repeat center / cover !important;
             }
 
             .application {
