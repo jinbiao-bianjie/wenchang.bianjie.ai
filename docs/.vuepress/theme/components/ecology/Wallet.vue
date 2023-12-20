@@ -6,17 +6,13 @@
                 <div
                     v-for="(item, index) in walletsServiceProvider.providers"
                     :key="index"
-                    class="wallet_provider"
+                    class="provider"
+                    :style="{
+                        background: `url(/ecology/${item.bgImg}.png) no-repeat center / cover`,
+                    }"
                 >
-                    <div
-                        class="provider"
-                        :style="{
-                            background: `url(/ecology/${item.bgImg}.png) no-repeat center / cover`,
-                        }"
-                    >
-                        <img :src="getWalletProviderLogo(item.logo)" alt="" />
-                        <p class="provider_name">{{ item.name }}</p>
-                    </div>
+                    <img :src="getWalletProviderLogo(item.logo)" alt="" />
+                    <p class="provider_name">{{ item.name }}</p>
                     <div class="provider_info">
                         <div
                             class="application_wrap"
@@ -99,87 +95,112 @@ export default {
       justify-content: center;
       gap: 2.4rem;
       margin: 4rem auto 0;
+      min-height: 36.2rem;
 
       @media (max-width: 570px) {
         display: unset;
         width: 100%;
+        height: auto;
+        max-height: 66.8rem;
       }
 
-      .wallet_provider {
+      .provider {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        min-height: 36.2rem;
-
-        @media (max-width: 992px) {
-          min-height: 38.6rem;
-        }
-
-        @media (max-width: 570px) {
-          margin-top: 2.4rem;
-          min-height: auto;
-
-          &:first-child {
-            margin-top: 0;
-          }
-        }
+        padding: 10rem 0 0;
+        width: 27.6rem;
+        min-width: 27.6rem;
+        max-width: 27.6rem;
+        height: 34.4rem;
+        transition: width 0.5s;
 
         &:hover {
-          .provider {
+          display: block;
+          padding: 0;
+          width: 100%;
+          max-width: 100%;
+
+          img {
+            display: none;
+          }
+
+          .provider_name {
             display: none;
           }
 
           .provider_info {
             display: block;
+            transform: translateY(-2.11%);
           }
         }
 
-        .provider {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding: 10rem 0 0;
-          width: 27.6rem;
-          height: 34.4rem;
+        @media (max-width: 992px) {
+          width: 19.4rem;
+          min-width: 19.4rem;
+          max-width: 19.4rem;
+          height: 36.8rem;
+        }
+
+        @media (max-width: 570px) {
+          margin: 2.4rem auto 0;
+          padding: 2.4rem 0;
+          width: calc(100% - 16px);
+          min-width: calc(100% - 16px);
+          max-width: calc(100% - 16px);
+          height: 16.4rem;
+          min-height: 16.4rem;
+          max-height: 16.4rem;
+          transition: width 0s, height 0.5s;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:hover {
+            width: 100%;
+            height: 48rem;
+            max-height: 48rem;
+
+            .provider_info {
+              display: block;
+              height: 100%;
+              transform: translateY(0);
+
+              .application_wrap {
+                height: 100%;
+              }
+            }
+          }
+        }
+
+        img {
+          width: 10rem;
+          height: 10rem;
+
+          @media (max-width: 570px) {
+            width: 8rem;
+            height: 8rem;
+          }
+        }
+
+        .provider_name {
+          margin-top: 2.4rem;
+          font-size: $fontSize20;
+          font-weight: 600;
+          color: #000000;
+          line-height: 2rem;
+          text-align: center;
 
           @media (max-width: 992px) {
-            padding: 9.8rem 0 0;
-            width: 19.4rem;
-            height: 36.8rem;
+            max-width: 13.9rem;
+            line-height: 2.4rem;
           }
 
           @media (max-width: 570px) {
-            padding: 2.4rem 0 1.6rem;
-            width: 29.5rem;
-            width: 100%;
-            height: 16.4rem;
-          }
-
-          img {
-            width: 10rem;
-            height: 10rem;
-
-            @media (max-width: 570px) {
-              width: 8rem;
-              height: 8rem;
-            }
-          }
-
-          .provider_name {
-            margin-top: 2.4rem;
-            font-size: $fontSize20;
-            font-weight: 600;
-            color: #000000;
+            margin-top: 1.6rem;
+            max-width: 100%;
             line-height: 2rem;
-            text-align: center;
-
-            @media (max-width: 992px) {
-              max-width: 13.9rem;
-            }
-
-            @media (max-width: 570px) {
-              max-width: 100%;
-              line-height: 2.4rem;
-            }
           }
         }
 
@@ -187,6 +208,7 @@ export default {
           display: none;
           box-sizing: border-box;
           padding: 0.8rem;
+          max-width: 84.2rem;
           background: #fff;
           box-shadow: 0rem 0rem 0.8rem 0rem rgba(112, 101, 255, 0.15);
           border-radius: 0.4rem;
@@ -197,20 +219,6 @@ export default {
             height: 34.4rem;
             overflow-y: auto;
 
-            &::-webkit-scrollbar {
-              width: 0.4rem;
-              height: 0.4rem;
-            }
-
-            &::-webkit-scrollbar-track-piece {
-              background-color: transparent;
-              -webkit-border-radius: 6px;
-            }
-
-            &::-webkit-scrollbar-thumb:vertical {
-              background-color: #CECCF0;
-            }
-
             @media (max-width: 992px) {
               padding: 2.4rem;
               height: 36.8rem;
@@ -218,7 +226,7 @@ export default {
             }
 
             @media (max-width: 570px) {
-              height: 46.4rem;
+              height: 16.4rem;
               background: url('../../assets/ecology/back_bg_375.png') no-repeat center / cover !important;
             }
 
