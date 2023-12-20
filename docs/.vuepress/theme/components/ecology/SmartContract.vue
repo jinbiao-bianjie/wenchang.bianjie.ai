@@ -235,8 +235,9 @@ export default {
             .contract_item {
               position: relative;
               padding: 0.8rem 1.4rem 0.8rem 3.4rem;
-              border: 0.1rem solid rgba(112, 101, 255, 0.15);
-              border-radius: 0 2.4rem 2.4rem 0;
+              background: #F0F4FE;
+              border-radius: 0rem 2.4rem 2.4rem 0rem;
+              border: 0.1rem solid #ECEEFE;
 
               .svg_icon {
                 position: absolute;
