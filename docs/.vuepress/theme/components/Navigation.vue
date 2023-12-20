@@ -153,7 +153,7 @@ export default {
             align-items: center;
             height: $navbarHeight;
             @media (max-width: 1200px) {
-                padding-left: 4.8rem;
+                padding-left: 3.2rem;
             }
             @media (max-width: 375px) {
                 padding-left: 1.6rem;
@@ -186,7 +186,7 @@ export default {
             list-style: none;
             font-size: $fontSize16;
             @media (max-width: 1200px) {
-                padding-right: 4.8rem;
+                padding-right: 3.2rem;
             }
             @media (max-width: 960px) {
                 display: none;
@@ -260,7 +260,7 @@ export default {
             height: $navbarHeight;
 
             @media (max-width: 960px) {
-                padding-left: 4.8rem;
+                padding-left: 3.2rem;
             }
             @media (max-width: 432px) {
                 padding-left: 1.6rem;
@@ -279,7 +279,7 @@ export default {
             .mobile_menu_icon {
                 cursor: pointer;
                 @media (max-width: 960px) {
-                    padding-right: 4.8rem;
+                    padding-right: 3.2rem;
                 }
                 @media (max-width: 432px) {
                     padding-right: 1.6rem;

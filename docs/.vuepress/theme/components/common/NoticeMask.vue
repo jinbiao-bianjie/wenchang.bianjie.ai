@@ -21,9 +21,6 @@ export default {
             this.$emit('update:showMask', false);
         },
     },
-    mounted() {
-        console.log(this.notice, 'notice');
-    },
 };
 </script>
 
