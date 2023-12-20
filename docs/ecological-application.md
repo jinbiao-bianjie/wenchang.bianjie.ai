@@ -43,14 +43,14 @@
             serviceProviderList:
                 [
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/thoughtworks.png,
                         fullName: Thoughtworks,
                         description:
                             一家创立于 1993 年的全球性软件及咨询公司。Thoughtworks
                             汇聚了全球高水准软件精英，提出了分布式敏捷的概念，依托领先的策略、设计、数据和⼯程能⼒，凭借在定制系统和敏捷软件交付领域的深耕、以及遍布全球的分布式团队带来的⼴泛的技术能⼒，率先确定了全球多家成功企业都在使⽤的技术原则，帮助客户快速实现业务价值，被诸多客户誉为数字化创新合作伙伴。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/artart.png,
                         fullName: 北京艺天下文化科技有限公司,
                         description:
                             成立于 2015
@@ -59,17 +59,17 @@
                             等多个应用，旨在打造合规、便捷、国际化的数字化藏品发布和营销平台。艺天下已成功服务了众多行业头部客户，成为艺术行业中的领先技术服务商。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/digital_engine.png,
                         fullName: 山东数字引擎信息科技有限公司,
                         description: 专注于提供高品质互联网技术开发服务的公司，致力于运用前沿技术来满足客户需求。业务范围涵盖了区块链技术及解决方案等领域，并提供从构思到可量产的一站式服务。团队具备敏锐的市场洞察力，致力于为客户提供专业和高标准的互联网产品设计开发方案，为互联网品牌的建立与推广做出卓越的贡献。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/centra.png,
                         fullName: 上海善在信息科技有限公司,
                         description: 致力于为行业提供品牌数字化营销解决方案的公司。作为数字藏品品牌价值挖掘者，帮助企业紧跟潮流科技，拓展数字世界市场，并构建新型的商业模式。不断创新，通过数字化营销解决方案，帮助客户在数字时代获得更大的市场份额和竞争优势。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/naas.png,
                         fullName: 上海恩赋特科技发展有限公司,
                         description:
                             专注于数字藏品领域的服务提供商，为行业提供 NAAS
@@ -78,7 +78,7 @@
                             NFT 深化行业应用和快速落地再添利器。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/guwuchuanshi.png,
                         fullName: 浙江古物传世数字文化有限公司,
                         description:
                             古董文玩行业的数字探索和开拓者，面向古董实物和其数字资产的确权、权益登记、溯源及交易平台，利用文昌链
@@ -86,38 +86,38 @@
                             等技术，向全球古物文玩行业和博物馆提供基于区块链的可信技术解决方案和安全交易平台。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/lbt.png,
                         fullName: 四川领链科技有限公司,
                         description: 四川省区块链行业协会的会员单位，致力于开发与区块链、人工智能、分布式存储和超级计算相关的关键技术。通过自主研发，为客户提供了一系列前沿的行业解决方案，涵盖了数字文旅、区块链溯源、数字白酒、分布式存储等多个应用场景。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/andlinks.png,
                         fullName: 南京安链数据科技有限公司,
                         description:
                             中国区块链百强企业，专注于利用区块链等前沿技术提供数据分析和软件服务的专业型公司，在区块链技术和解决方案领域具有多年的研究和实践经验，目前已获得国家高新技术企业、双软企业、CMMI3
                             等重要资质。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/xiaohuo_technology.png,
                         fullName: 成都小火科技有限公司,
                         description:
                             成立于 2013 年，专注于为企业和创业者提供数字化转型及 Web3.0
                             应用开发、分布式商业应用开发服务。依托强大的软件研发实力和丰富的互联网运营经验，团队研发的「数字艺术品交易系统」「数字艺术品营销系统」「数字艺术品电商系统」已为数百品牌企业和创业者赋能。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/wubenbear.png,
                         fullName: 成都向己科技有限公司,
                         description:
                             成功打造了基于文昌链的俱乐部活动 O2O
                             平台「吾本熊元宇宙」。多次获得国际和国内创业赛事的奖项认可，客户群包括科大讯飞、网易、搜狗、思必驰等知名企业。首创了元宇宙俱乐部一站式解决方案，并建立了全国性的元宇宙俱乐部联盟。致力于推动元宇宙技术在实体行业中的应用，为客户提供全方位的赋能服务。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/eight_six.png,
                         fullName: 河南八六互联信息技术有限公司,
                         description: 拥有一支由多年互联网从业经验的专业团队组成的优秀团队。凭借多年来在互联网核心技术方面的积累，致力于为创业者和企业提供与其「互联网+」战略相适应的服务。迄今为止，已经为众多企业、知名上市公司以及事业单位提供了专业的技术服务。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/hk.png,
                         fullName: 郑州很快科技有限公司,
                         description:
                             成立于 2013
@@ -126,7 +126,7 @@
                             开发梦想，化创造力为可衡量的利润，交付质量过硬、成果卓越的应用产品。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/creative_imagination_technology.png,
                         fullName: 甘肃创想科技有限公司,
                         description:
                             2016 年诞生于甘肃，秉承「想象 · 创造 ·
@@ -135,7 +135,7 @@
                             时代下集技术开发与创意服务为一体的、用户与团队效益最大化的国内顶尖整合服务商。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/aiju.png,
                         fullName: 杭州爱聚科技有限公司,
                         description:
                             成立于 2012
@@ -145,7 +145,7 @@
                             元宇宙版系统。是行业内富有实力和经验的研发和服务团队。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/tootools_island.png,
                         fullName: 上海瑞杰印信息科技有限公司,
                         description:
                             于 2021 年成立，致力于构建次世代全新轻定制服务平台，通过 AI
@@ -154,7 +154,7 @@
                             优化，及个人头像定制等功能，为用户提供无限创意乐趣。会员用户也可上载作品成为驻平台艺术家，把自己的图像设计分享给更多的定制爱好者。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/lsotop.png,
                         fullName: 重庆同位素网络科技有限公司,
                         description:
                             中国领先 Web3.0
@@ -164,7 +164,7 @@
                             商业模式架构设计、专属智能合约定制、产品转型等一站式服务。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/catalk.png,
                         fullName: 超喵（武汉）数字技术有限公司,
                         description:
                             Web3.0 时代基于 DID 的社群管理工具，协助平台方和品牌方搭建 NFT
@@ -176,7 +176,7 @@
                             社群成员无上限，并且已接入 ChatGPT、AI 绘图等 AIGC 工具，助力用户留存。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/cae_co.png,
                         fullName: 矩刻创意设计（深圳）有限公司,
                         description:
                             团队由经验丰富的开发人员、设计师和顾问组成，专业能力涵盖区块链开发、智能合约、人工智能、机器人、应用程序和网站搭建，并曾为多家国际主流时尚品牌提供服务。团队保持对
@@ -185,7 +185,7 @@
                             Web3.0 的全部潜力。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/xvr.png,
                         fullName: 海口淘志网络科技有限公司,
                         description:
                             成立于 2010
@@ -198,7 +198,7 @@
                             WEB3.0 域名系统，零代码快速建立自己的元宇宙空间。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/mws_meta.png,
                         fullName: 武汉唛沃斯科技发展有限责任公司,
                         description:
                             一家专门研究美食的平台，是集研发、制作、销售、服务为一体的连锁餐饮。线上唛沃斯
@@ -206,7 +206,7 @@
                             是利用区块链技术打造的数字藏品艺术电商平台，旨在推动科技赋能实体经济，打造线上线下数字社区的全新商业模式，探索元宇宙和实体经济相结合，赋能实体带动实体经济创新发展，以及传播中华艺术文化，探索科技和文化产业、实体经济的创新发展。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/lianji.png,
                         fullName: 南京链集信息科技有限公司,
                         description:
                             提供以下四项服务：1、承担政府、高校、科研机构、社会组织关于数字藏品的项目试点、标准编制、政策制定；2、提供数字藏品铸造、交易、营销、实体赋能的各种技术组件；3、优质
@@ -214,7 +214,7 @@
                             面向全国数字藏品行业的产品分发；4、数字艺术相关赛事的技术承办与孵化。链集科技是数字藏品唯一国赛「中国好创意」的技术承办方，此外，还是中国通信工业协会区块链专委会等数十家社会组织的官方数藏运营机构。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/icloser.png,
                         fullName: 成都静距离科技有限公司,
                         description:
                             成立于 2021 年
@@ -225,7 +225,7 @@
                             为身份解决方案，星球链接一切现实场景，让 NFT 成为所有场景事件通行证。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/dv_101.png,
                         fullName: 北京漫联星球数字科技有限公司,
                         description:
                             由漫联盟 IPBANK
@@ -234,7 +234,7 @@
                             产业用户打造了全新元宇宙场景的「版权品和品牌互动」生态产业链服务。漫联星球携手多家视觉和区块链技术团队，基于元宇宙概念构建最具中国特色的元宇宙崭新业态，为用户增加虚拟体验场景。漫联星球股东旗下拥有多家区块链、原创、发行、影视、衍生品等版权产业实体公司及技术开发公司，在北京、上海、杭州、长沙、西安、东南亚等地均拥有产业基地和研发平台，拥有超过十万类型的原创著作权作品。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/co_source.png,
                         fullName: 广州共源信息科技有限公司,
                         description:
                             国内领先的 APP+
@@ -242,14 +242,14 @@
                             开发等多个领域。公司拥有一批深耕行业十年以上的专业技术团队及商业顾问，为客户量身定制最佳解决方案，并帮助其实现商业目标。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/rural_construction.png,
                         fullName: 广东数字乡村建设发展投资有限公司,
                         description:
                             成立于 2020
                             年，总部在广州，一站式数字乡村投融资运营服务商，开发运营的魔宝云村数字资产区块链服务平台，专业提供数字乡村资产的「开发、确权、发行、营销」一站式服务。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/teaching_meta.png,
                         fullName: 广东仓音数字科技有限公司,
                         description:
                             坐落于横琴粤港澳深度合作区，是一家基于区块链、NFT、AIGC
@@ -258,14 +258,14 @@
                             技术与实体经济、文化产业相结合，创建未来元宇宙中个人虚拟资产与现实之间的联系性。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/hulong_data.png,
                         fullName: 重庆华龙网海数科技有限公司,
                         description:
                             成立于 2016
                             年，是重庆出版集团以及华龙网集团基于「政务大数据服务」成立的合资企业，定位于服务政府、企事业单位，以互联网、大数据和信息化为发展方向，为客户提供从咨询、设计、产品研发、实施到运维的整体解决方案。,
                     },
                     {
-                        logo: http://localhost:8080/img/wenchang_image.5e47be57.png,
+                        logo: https://www.bianjie.ai/resources/WenChangChain/wenchang-HOME-image/Facilitator/skz.png,
                         fullName: 陕西思考者科技有限公司,
                         description: 在高新技术应用领域中专业从事应用系统开发、区块链技术开发、信息安全服务的高新技术企业。为广大客户提供应用系统开发解决方案，助力企业打造线上平台。,
                     },

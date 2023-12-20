@@ -197,7 +197,6 @@ export default {
           background: url('../../assets/ecology/elite_bg.png') no-repeat center / contain;
 
           .provider_logo {
-            padding: 1.2rem;
             width: 11rem;
             height: 11rem;
 
