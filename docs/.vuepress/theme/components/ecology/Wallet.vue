@@ -7,9 +7,7 @@
                     v-for="(item, index) in walletsServiceProvider.providers"
                     :key="index"
                     class="provider"
-                    :style="{
-                        background: `url(/ecology/${item.bgImg}.png) no-repeat center / cover`,
-                    }"
+                    :style="differentProviderBg(item.bgImg)"
                 >
                     <img :src="getWalletProviderLogo(item.logo)" alt="" />
                     <p class="provider_name">{{ item.name }}</p>
@@ -55,12 +53,30 @@
 export default {
     name: 'Wallet',
     props: ['walletsServiceProvider'],
+    data() {
+        return {
+            clientWidth: +document.body.clientWidth,
+        };
+    },
     methods: {
         getWalletProviderLogo(img) {
             return `/ecology/${img}.png`;
         },
+        differentProviderBg(providerBg) {
+            if (this.clientWidth > 992) {
+                return `background: url(/ecology/${providerBg}.png) no-repeat center / cover;`;
+            }
+            if (this.clientWidth > 570) {
+                return `background: url(/ecology/${providerBg}_768.png) no-repeat center / cover;`;
+            }
+            return `background: url(/ecology/${providerBg}_375.png) no-repeat center / cover;`;
+        },
     },
-    mounted() {},
+    mounted() {
+        window.onresize = () => {
+            return (this.clientWidth = +document.body.clientWidth);
+        };
+    },
 };
 </script>
 
@@ -113,6 +129,7 @@ export default {
         min-width: 27.6rem;
         max-width: 27.6rem;
         height: 34.4rem;
+        border-radius: 0.4rem;
         transition: width 0.5s;
 
         &:hover {
@@ -255,7 +272,7 @@ export default {
 
                 .description {
                   margin-top: 2.4rem;
-                  max-width: 55.1rem;
+                  max-width: 54rem;
 
                   @media (max-width: 992px) {
                     max-width: 42.2rem;

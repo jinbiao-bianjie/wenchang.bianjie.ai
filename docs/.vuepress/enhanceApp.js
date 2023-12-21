@@ -21,6 +21,8 @@ export default async ({ Vue, options, router, siteData, isServer }) => {
             if (to.path.includes('/wenchangchain')) {
                 next('/');
             } else if (to.path.includes('/ecological-application')) {
+                next('/partner');
+            } else if (to.path.includes('/partner')) {
                 store.commit('currentIndex', 1);
                 localStorage.setItem('currentIndex', 1);
             } else {

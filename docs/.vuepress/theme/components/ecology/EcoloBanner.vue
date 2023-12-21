@@ -63,17 +63,13 @@ export default {
         line-height: 6rem;
         letter-spacing: 0.4rem;
 
-        @media (max-width: 600px) {
-          font-size: $fontSize40;
-        }
-
-        @media (max-width: 520px) {
-          font-size: $fontSize24;
-          font-weight: 600;
-        }
-
-        @media (max-width: 400px) {
+        @media (max-width: 768px) {
           text-align: center;
+        }
+
+        @media (max-width: 570px) {
+          font-size: $fontSize32;
+          line-height: 3.6rem;
         }
       }
 
@@ -89,12 +85,12 @@ export default {
           text-align: center;
         }
 
-        @media (max-width: 520px) {
-          font-size: $fontSize16;
+        @media (max-width: 570px) {
+          font-size: $fontSize14;
         }
 
-        @media (max-width: 400px) {
-          text-align: center;
+        @media (max-width: 460px) {
+          max-width: 32rem;
         }
       }
 
@@ -151,7 +147,7 @@ export default {
               line-height: 3.2rem;
 
               @media (max-width: 520px) {
-				font-size: $fontSize20;
+                font-size: $fontSize20;
               }
             }
 
@@ -161,8 +157,9 @@ export default {
               font-weight: 400;
               color: #000000;
               line-height: 2.4rem;
-			  @media (max-width: 520px) {
-				font-size: $fontSize12;
+
+              @media (max-width: 520px) {
+                font-size: $fontSize12;
               }
             }
           }
