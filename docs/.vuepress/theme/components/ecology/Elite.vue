@@ -279,7 +279,7 @@ export default {
   line-height: 2.4rem !important;
 
   .explanation {
-    margin-top: 26.8rem;
+    margin-top: 25.6rem;
     color: rgba(0, 0, 0, 0.4) !important;
 
     @media (max-width: 768px) {

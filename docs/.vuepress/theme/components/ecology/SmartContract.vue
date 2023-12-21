@@ -99,10 +99,6 @@ export default {
       max-width: 64rem;
     }
 
-    @media (max-width: 704px) {
-      max-width: 31.1rem;
-    }
-
     .contarct_title {
       font-size: $fontSize24;
       font-weight: 600;
@@ -158,8 +154,8 @@ export default {
               border-radius: 50%;
 
               @media (max-width: 992px) {
-                width: 6.6rem;
-                height: 6.6rem;
+                width: 7.8rem;
+                height: 7.8rem;
               }
             }
           }
@@ -175,7 +171,7 @@ export default {
               font-size: $fontSize20;
               font-weight: 600;
               color: #000000;
-              line-height: 2rem;
+              line-height: 2.4rem;
             }
 
             .control_text {

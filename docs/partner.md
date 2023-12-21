@@ -33,7 +33,7 @@
                                 / 元宇宙 / Web 3.0 市场客户名单）</p> <p>2. 支持的分布式应用在 AVATA
                                 平台的账号及认证主体。</p> <br />
                                 <p>加入「文昌链精英服务商计划」，与我们一起探索合作共赢模式，共同推动文昌链全球伙伴生态的繁荣发展！</p>
-                                <p><a target="_blank" rel="noopener noreferrer"
+                                <br /> <p><a target="_blank" rel="noopener noreferrer"
                                 href="https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzUzNzExMDcxOA==&action=getalbum&album_id=2990618996519518213&scene=173&from_msgid=2247496590&from_itemidx=1&count=3&nolastread=1#wechat_redirect">
                                 了解更多 <i class="iconfont icon-turnto"></i></a></p> <p
                                 class="explanation">*

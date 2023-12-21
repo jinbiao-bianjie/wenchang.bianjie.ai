@@ -71,6 +71,7 @@ export default {
       display: flex;
       flex-direction: column;
       z-index: 1;
+      margin-left: 2.4rem;
       font-size: $fontSize24;
       font-weight: 600;
       color: #000000;
@@ -89,14 +90,16 @@ export default {
     .payment_content {
       margin-top: -1.2rem;
       padding: 4.8rem 2.4rem;
-      background: url('../../assets/ecology/huifutianxia_bg.png') no-repeat center / cover;
+      background: #F9FAFD url('../../assets/ecology/huifutianxia_bg.png') no-repeat center / cover;
+      background-position: 100% 100%;
 
       @media (max-width: 992px) {
-        background: url('../../assets/ecology/huifutianxia_bg_768.png') no-repeat center / cover;
+        background: #F9FAFD url('../../assets/ecology/huifutianxia_bg_768.png') no-repeat center / contain;
+        background-position: 100% 100%;
       }
 
       @media (max-width: 375px) {
-        background: url('../../assets/ecology/huifutianxia_bg_375.png') no-repeat center / cover;
+        background: #F9FAFD url('../../assets/ecology/huifutianxia_bg_375.png') no-repeat center / contain;
       }
 
       .name {
@@ -109,6 +112,10 @@ export default {
       .descriptions {
         margin-top: 2rem;
         max-width: 70.5rem;
+
+        @media (max-width: 768px) {
+          max-width: 56rem;
+        }
 
         .description {
           margin-top: 2.4rem;
@@ -145,15 +152,18 @@ export default {
 
         .wallet {
           padding: 5rem 2.4rem 2.4rem;
-          background: url('../../assets/ecology/huifutianxia_wallet.png') no-repeat center / cover;
+          background: #F9FAFD url('../../assets/ecology/huifutianxia_wallet.png') no-repeat center / contain;
+          background-position: 100% 100%;
           border-radius: 0.4rem;
 
-          @media (max-width: 992px) {
-            background: url('../../assets/ecology/huifutianxia_wallet_768.png') no-repeat center / cover;
+          @media (max-width: 768px) {
+            background: #F9FAFD url('../../assets/ecology/huifutianxia_wallet_768.png') no-repeat center / contain;
+            background-position: 100% 100%;
           }
 
           @media (max-width: 375px) {
-            background: url('../../assets/ecology/huifutianxia_wallet_375.png') no-repeat center / cover;
+            background: #F9FAFD url('../../assets/ecology/huifutianxia_wallet_375.png') no-repeat center / contain;
+            background-position: 100% 100%;
           }
 
           img {
