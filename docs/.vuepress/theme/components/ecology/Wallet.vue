@@ -120,6 +120,7 @@ export default {
           padding: 0;
           width: 100%;
           max-width: 100%;
+          background: none !important;
 
           img {
             display: none;
@@ -213,6 +214,11 @@ export default {
           box-shadow: 0rem 0rem 0.8rem 0rem rgba(112, 101, 255, 0.15);
           border-radius: 0.4rem;
           border: 0.1rem solid $highlightDetailColor;
+          animation: providerInfo 0.5s;
+
+          @media (max-width: 570px) {
+            animation: none;
+          }
 
           .application_wrap {
             padding: 2.3rem 23.3rem 2.4rem 2.4rem;
@@ -279,6 +285,18 @@ export default {
         }
       }
     }
+  }
+}
+
+@keyframes providerInfo {
+  0% {
+    opacity: 0;
+    width: 80%;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
   }
 }
 </style>
