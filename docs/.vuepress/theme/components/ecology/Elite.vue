@@ -113,11 +113,11 @@ export default {
 
 <style lang="stylus" scoped>
 .elite {
-  padding: 8rem;
+  padding: 8rem 3.2rem;
   background-color: #fff;
 
   @media (max-width: 992px) {
-    padding: 6rem;
+    padding: 6rem 3.2rem;
   }
 
   .elite_container {

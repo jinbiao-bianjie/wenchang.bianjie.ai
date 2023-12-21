@@ -18,6 +18,7 @@ export default {
 <style lang="stylus" scoped>
 .scenario {
   padding: 8rem 0;
+  width: 100%;
   min-height: 72rem;
   background: url('../../assets/ecology/scenario_bg.png') no-repeat center / cover;
 

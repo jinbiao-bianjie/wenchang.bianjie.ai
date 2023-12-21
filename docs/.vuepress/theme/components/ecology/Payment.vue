@@ -196,10 +196,11 @@ export default {
 
           .description {
             padding: 2.4rem;
+            height: 100%;
             background: url('../../assets/ecology/huifutianxia_back_bg.png') no-repeat center / cover;
 
             .text {
-              height: 19.2rem;
+              height: 100%;
               font-size: $fontSize14;
               font-weight: 400;
               color: rgba(0, 0, 0, 0.75);
