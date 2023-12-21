@@ -52,6 +52,7 @@ export default {
       font-weight: 400;
       color: rgba(0, 0, 0, 0.75);
       line-height: 2.4rem;
+      text-align: center;
     }
 
     .scenario_img {
@@ -67,9 +68,9 @@ export default {
       }
 
       @media (max-width: 720px) {
-        width: 37.5rem;
+        width: 100%;
         height: 29.3rem;
-        background: url('../../assets/ecology/scenario_375.png') no-repeat center / cover;
+        background: url('../../assets/ecology/scenario_375.png') no-repeat center / contain;
       }
     }
   }
