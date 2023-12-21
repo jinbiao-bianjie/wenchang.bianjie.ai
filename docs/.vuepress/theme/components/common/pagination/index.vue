@@ -68,10 +68,14 @@ export default {
   }
 
   :deep(.ant-pagination-prev:not(.ant-pagination-disabled)), :deep(.ant-pagination-next:not(.ant-pagination-disabled)) {
+    min-width: 1.6rem;
+
     .ant-pagination-item-link {
       display: flex;
       justify-content: center;
       align-items: center;
+      box-sizing: border-box;
+      width: 1.6rem;
       color: $highlightDetailColor;
 
       .anticon {
@@ -84,6 +88,8 @@ export default {
   }
 
   :deep(.ant-pagination-disabled) {
+    min-width: 1.6rem;
+
     .ant-pagination-item-link {
       display: flex;
       justify-content: center;
