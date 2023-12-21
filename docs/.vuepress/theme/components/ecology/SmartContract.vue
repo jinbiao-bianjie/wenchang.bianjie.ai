@@ -84,12 +84,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem 3.2rem;
+  padding: 8rem 2.4rem;
   min-height: 50.8rem;
   background-color: #f9fafd;
 
   @media (max-width: 992px) {
-    padding: 6rem 3.2rem;
+    padding: 6rem 2.4rem;
   }
 
   .contract_container {

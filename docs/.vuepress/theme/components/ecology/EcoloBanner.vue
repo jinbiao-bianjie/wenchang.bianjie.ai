@@ -53,7 +53,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 9.6rem 3.2rem;
+        padding: 9.6rem 2.4rem;
       }
 
       .title {

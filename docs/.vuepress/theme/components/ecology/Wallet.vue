@@ -69,11 +69,11 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 3.2rem 8rem;
+  padding: 0 2.4rem 8rem;
   background-color: #fff;
 
   @media (max-width: 992px) {
-    padding: 0 3.2rem 6rem;
+    padding: 0 2.4rem 6rem;
   }
 
   .wallet_container {
