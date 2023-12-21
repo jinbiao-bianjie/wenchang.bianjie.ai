@@ -56,11 +56,11 @@ export default {
 
 <style lang="stylus" scoped>
 .payment {
-  padding: 8rem 3.2rem;
+  padding: 8rem 2.4rem;
   background-color: #fff;
 
   @media (max-width: 992px) {
-    padding: 6rem 3.2rem;
+    padding: 6rem 2.4rem;
   }
 
   .payment_container {
