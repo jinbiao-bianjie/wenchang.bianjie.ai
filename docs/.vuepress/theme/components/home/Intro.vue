@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="intro_info_content">
-                <img src="../../assets/home/intro_info.png" alt="" />
+                <img src="../../assets/home/intro_info.jpg" alt="">
             </div>
         </div>
     </div>
