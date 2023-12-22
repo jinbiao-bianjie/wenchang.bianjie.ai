@@ -98,7 +98,7 @@ export default {
         background-position: 100% 100%;
       }
 
-      @media (max-width: 375px) {
+      @media (max-width: 556px) {
         background: #F9FAFD url('../../assets/ecology/huifutianxia_bg_375.png') no-repeat center / contain;
       }
 

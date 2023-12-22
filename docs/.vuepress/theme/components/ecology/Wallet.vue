@@ -116,7 +116,7 @@ export default {
       @media (max-width: 570px) {
         display: unset;
         width: 100%;
-        height: auto;
+        min-height: 16.4rem;
         max-height: 66.8rem;
       }
 
@@ -163,9 +163,9 @@ export default {
         @media (max-width: 570px) {
           margin: 2.4rem auto 0;
           padding: 2.4rem 0;
-          width: calc(100% - 16px);
-          min-width: calc(100% - 16px);
-          max-width: calc(100% - 16px);
+          width: 29.6rem;
+          min-width: 29.6rem;
+          max-width: 29.6rem;
           height: 16.4rem;
           min-height: 16.4rem;
           max-height: 16.4rem;
@@ -240,6 +240,7 @@ export default {
           .application_wrap {
             padding: 2.3rem 23.3rem 2.4rem 2.4rem;
             height: 34.4rem;
+            border-radius: 0.4rem;
             overflow-y: auto;
 
             @media (max-width: 992px) {
