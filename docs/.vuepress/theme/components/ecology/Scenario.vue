@@ -30,6 +30,13 @@ export default {
 
   @media (max-width: 720px) {
     min-height: 51.82rem;
+  }
+
+  @media (max-width: 556px) {
+    min-height: 51.82rem;
+  }
+
+  @media (max-width: 500px) {
     background: url('../../assets/ecology/scenario_bg_375.png') no-repeat center / cover;
   }
 
@@ -38,6 +45,7 @@ export default {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    overflow: hidden;
 
     .scenario_title {
       font-size: $fontSize24;
@@ -68,9 +76,17 @@ export default {
       }
 
       @media (max-width: 720px) {
+        width: calc(100% - 6.4rem);
+      }
+
+      @media (max-width: 556px) {
         width: 100%;
         height: 29.3rem;
         background: url('../../assets/ecology/scenario_375.png') no-repeat center / contain;
+      }
+
+      @media (max-width: 500px) {
+        width: 120%;
       }
     }
   }

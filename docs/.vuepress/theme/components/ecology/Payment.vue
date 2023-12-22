@@ -111,10 +111,14 @@ export default {
 
       .descriptions {
         margin-top: 2rem;
-        max-width: 70.5rem;
+        max-width: 63.17%;
 
-        @media (max-width: 768px) {
-          max-width: 56rem;
+        @media (max-width: 992px) {
+          max-width: 79.55%;
+        }
+
+        @media (max-width: 556px) {
+          max-width: 100%;
         }
 
         .description {
