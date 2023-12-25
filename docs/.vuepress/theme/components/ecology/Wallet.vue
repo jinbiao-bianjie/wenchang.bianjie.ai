@@ -122,15 +122,17 @@ export default {
         display: flex;
         align-items: center;
         height: 36.2rem;
-        animation: providerInfo 0.5s;
-
+		width: 50%;
+		  transition: all 0.5s;
+		  position: relative;
         &:hover {
+			width: 100%;
           .provider {
-            display: none;
+            opacity: 0;
           }
 
           .provider_info {
-            display: block;
+			  opacity: 1;
           }
         }
 
@@ -154,7 +156,7 @@ export default {
           padding: 10rem 0 0;
           width: 27.6rem;
           height: 34.4rem;
-
+			opacity: 1;
           @media (max-width: 992px) {
             padding: 9.8rem 0 0;
             width: 19.4rem;
@@ -201,7 +203,8 @@ export default {
         }
 
         .provider_info {
-          display: none;
+          opacity: 0;
+			position: absolute;
           box-sizing: border-box;
           padding: 0.8rem;
           max-width: 84.2rem;
@@ -209,7 +212,6 @@ export default {
           box-shadow: 0rem 0rem 0.8rem 0rem rgba(112, 101, 255, 0.15);
           border-radius: 0.4rem;
           border: 0.1rem solid $highlightDetailColor;
-          animation: providerInfo 0.5s;
 
           @media (max-width: 570px) {
             animation: providerInfoHeight 0.5s;
@@ -280,6 +282,9 @@ export default {
           }
         }
       }
+		.wallet_provider:first-child{
+			justify-content: flex-end;
+		}
     }
   }
 }
