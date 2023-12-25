@@ -181,7 +181,7 @@ export default {
 
         &:hover {
           .provider_back {
-            display: block;
+            visibility: visible;
           }
         }
 
@@ -223,7 +223,7 @@ export default {
         }
 
         .provider_back {
-          display: none;
+          visibility: hidden;
           position: absolute;
           top: -0.8rem;
           bottom: -0.8rem;
@@ -237,6 +237,7 @@ export default {
           border-radius: 0.4rem;
           border: 0.1rem solid #C5CEEC;
           overflow: hidden;
+          transition: all 0.1s linear;
 
           .provider_back_description {
             position: relative;
